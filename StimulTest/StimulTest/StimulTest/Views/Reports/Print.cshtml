@@ -1,0 +1,14 @@
+﻿@using Stimulsoft.Report.Mvc
+
+@{
+    ViewBag.Title = "Print";
+}
+
+<h2>Print</h2>
+
+@Html.Stimulsoft().StiMvcViewer(new StiMvcViewerOptions()
+{
+    Theme = StiTheme.Office2013,
+    ActionGetReportSnapshot = "Report",
+    ActionViewerEvent = "ViewerEvent"
+})
